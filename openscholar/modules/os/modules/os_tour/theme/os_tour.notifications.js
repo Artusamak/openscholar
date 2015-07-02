@@ -57,14 +57,12 @@
 
             // Adds our tour overlay behavior with desired effects.
             $('#os-tour-notifications-menu-link').click(function() {
-              $('html, body').animate({scrollTop:0}, '500', 'swing', function() {
-                $('.hopscotch-bubble').addClass('animated');
-                hopscotch.startTour(tour);
-                // Removes animation for each step.
-                $('.hopscotch-bubble').removeClass('animated');
-                // Allows us to target just this tour in CSS rules.
-                $('.hopscotch-bubble').addClass('os-tour-notifications');
-              });
+              $('.hopscotch-bubble').addClass('animated');
+              hopscotch.startTour(tour);
+              // Removes animation for each step.
+              $('.hopscotch-bubble').removeClass('animated');
+              // Allows us to target just this tour in CSS rules.
+              $('.hopscotch-bubble').addClass('os-tour-notifications');
             });
           }
         }
